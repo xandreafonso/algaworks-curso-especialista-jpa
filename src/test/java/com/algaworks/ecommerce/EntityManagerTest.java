@@ -6,8 +6,6 @@ import org.junit.*;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.HashMap;
-import java.util.Map;
 
 public class EntityManagerTest {
 
@@ -17,7 +15,8 @@ public class EntityManagerTest {
 
     @BeforeClass
     public static void setUpBeforeClass() {
-        entityManagerFactory = Persistence.createEntityManagerFactory("Ecommerce-PU");
+        entityManagerFactory = Persistence
+                .createEntityManagerFactory("Ecommerce-PU");
     }
 
     @AfterClass
